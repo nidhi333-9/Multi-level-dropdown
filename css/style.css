@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -48,6 +48,10 @@ header {
     cursor: pointer;
     z-index: 1500;
     display: none;
+}
+
+.menu-icons.rotate {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 nav {
@@ -160,7 +164,7 @@ li.move-right {
     line-height: initial;
 }
 
-@media only screen and (max-width:850px) {
+@media screen and (max-width:850px) {
     .nav-list {
         position: fixed;
         top: 0;
@@ -220,10 +224,6 @@ li.move-right {
     nav.active .nav-list {
         display: flex;
     }
-
-    /* .nav-list.active {
-        left: 0;
-    } */
 }
 
 /*Hero*/
